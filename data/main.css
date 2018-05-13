@@ -69,18 +69,43 @@ header h2 {
   line-height: 30px;
 }
 
+.aboutMe h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.aboutMe p {
+  text-indent: 30px;
+}
+
 .aboutMe-box1 img {
-  width: 250px;
+  width: 220px;
+  border-radius: 50%;
+  margin: 15px;
 }
 
 .aboutMe-box2 {
-  width: 390px;
-  font-size: .9em;
+  width: 400px;
+  font-size: .85em;
 }
 
 #projects {
   background-color: #e8e2cf;
   width: 100vw;
+}
+
+.js-title-1,
+.js-title-2,
+.js-title-3 {
+  margin: 10px 0;
+}
+
+.js-title-1 {
+  color: #c43805;
+}
+
+.js-title-3 {
+  color: #824c2d;
 }
 
 .img-box {
@@ -89,9 +114,14 @@ header h2 {
 }
 
 .mockImg {
-  max-width: 550px;
+  max-width: 600px;
   display: block;
-  margin: 20px auto;
+  margin: 30px auto;
+}
+
+.img-toggle-1,
+.img-toggle-2 {
+  margin-top: 30px;
 }
 
 .arrow-1,
@@ -99,7 +129,7 @@ header h2 {
   display: block;
   width: 150px;
   height: 40px;
-  margin: 10px auto;
+  margin: 20px auto;
   background: transparent;
   font-size: 2.6em;
   font-weight: bold;
@@ -138,7 +168,7 @@ header h2 {
 }
 
 .project-2box {
-  background-color: #dcd5e2;
+  background-color:#F1D3C7;
 }
 
 .project-3box {
@@ -146,10 +176,11 @@ header h2 {
 }
 
 #projects p {
-  padding: 40px;
+  padding: 20px 5px;
   margin: 0 auto;
   max-width: 600px; 
   line-height: 25px;
+  text-indent: 45px;
 }
 
 .demo-links {
@@ -247,6 +278,7 @@ footer p {
   padding: 30px 0;
   font-weight: bold;
   font-size: 1em;
+  text-align: center;
 }
 
 @media screen and (max-width: 770px) {
@@ -258,22 +290,22 @@ footer p {
 @media screen and (max-width: 430px) {
   .containerHead {
     background: url("./img/sf-small.jpeg") no-repeat center center;
-    height: 43vh;
+    height: 44vh;
   }
 
   nav {
     flex-direction: column;
     height: 230px;
-    font-size: 1em;
+    font-size: .8em;
   }
 
   .logo, 
   header h2 {
-    font-size: 3.6em;
+    font-size: 2.5em;
   }
 
   header h2 {
-    font-size: 2.6em;
+    font-size: 2em;
   }
 
   .aboutMe {
@@ -290,9 +322,20 @@ footer p {
     height: 30px;
   }
 
+  .js-title-1,
+  .js-title-2,
+  .js-title-3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
   .mockImg {
     width: 350px;
-    margin: 0;
+    margin: 0 auto;
+  }
+
+  .contact p {
+    line-height: 40px;
   }
 
   .contact-icons {
@@ -308,15 +351,11 @@ footer p {
 @media screen and (max-width: 375px) {
   .logo, 
   header h2 {
-    font-size: 3.3em;
+    font-size: 2.1em;
   }
 
   header h2 {
-    font-size: 2.5em;
-  }
-
-  nav {
-    font-size: .9em;
+    font-size: 1.8em;
   }
 
   .aboutMe {
@@ -324,18 +363,27 @@ footer p {
     margin: 0;
   }
 
+  .aboutMe-box2 p {
+    font-size: .9em;
+  }
+
+  .arrow-1,
+  .arrow-2 {
+    font-size: 2.7em;
+  }
+
   .mockImg {
     width: 300px;
-    margin: 0;
+    display: block;
+    margin: 0 auto;
   }
 
   .box {
     padding: 15px;
   }
 
-  .img-box {
-    width: 300px;
-    margin:0;
+  .tech {
+    font-size: 1.1em;
   }
 
   #contact {
@@ -370,17 +418,24 @@ footer p {
 
   .logo, 
   header h2 {
-    font-size: 3em;
-    color: whitesmoke;
+    font-size: 2.5em;
   }
 
   header h2 {
-    font-size: 2.3em;
+    font-size: 1.9em;
   }
 
   .mockImg {
     width: 280px;
-    margin: 0;
+    margin: 0 auto;
   }
 
+  .arrow-1,
+  .arrow-2 {
+    font-size: 2.2em;
+  }
+
+  #projects p {
+    padding: 10px;
+  }
 }
