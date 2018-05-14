@@ -26,15 +26,15 @@ $(document).ready(function(){
   });
 
   $('.js-title-1').hover(function(){
-    $(this).toggleClass('animated swing');
+    $(this).toggleClass('animated pulse');
   });
 
   $('.js-title-2').hover(function(){
-    $(this).toggleClass('animated swing');
+    $(this).toggleClass('animated pulse');
   });
 
   $('.js-title-3').hover(function(){
-    $(this).toggleClass('animated swing');
+    $(this).toggleClass('animated pulse');
   });
 
 });
