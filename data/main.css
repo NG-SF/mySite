@@ -154,8 +154,8 @@ header h2 {
 #projects h2, h3 {
   text-align: center;
   font-size: 2.9em;
-  font-family: 'Lobster', cursive;
-  letter-spacing: 2px;
+  font-family: 'Lobster', cursive; 
+  letter-spacing: 4px;
 }
 
 #projects h2 {
@@ -183,6 +183,10 @@ header h2 {
   text-indent: 45px;
 }
 
+.article {
+  text-decoration: none;
+}
+
 .demo-links {
   max-width: 400px;
   margin: 20px auto 50px auto;
@@ -191,7 +195,8 @@ header h2 {
   flex-wrap: wrap;
 }
 
-.demo-links a {
+.demo-links a,
+.demo-links a:visited {
   text-decoration: none;
   cursor: pointer;
   font-family: 'Lobster', cursive;
@@ -432,7 +437,7 @@ footer p {
 
   .arrow-1,
   .arrow-2 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
 
   #projects p {
