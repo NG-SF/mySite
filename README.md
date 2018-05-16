@@ -1,4 +1,4 @@
-<h1><a href="http://www.nataliyagapochka.site/" target="_blank" rel="noopener">Portfolio website</a></h1>
+<h1><a href="https://www.nataliyagapochka.site/" target="_blank" rel="noopener">Portfolio website</a></h1>
 
 ## Technology Used  🛠
 <ul>
