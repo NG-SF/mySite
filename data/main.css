@@ -76,12 +76,14 @@ header h2 {
 
 .aboutMe p {
   text-indent: 30px;
+  text-align: justify;
 }
 
 .aboutMe-box1 img {
   width: 300px;
   border-radius: 5%;
   margin: 25px;
+
 }
 
 .aboutMe-box2 {
@@ -114,7 +116,8 @@ header h2 {
 }
 
 .mockImg {
-  max-width: 600px;
+  max-width: 100%;
+  height: auto;
   display: block;
   margin: 30px auto;
 }
@@ -181,6 +184,7 @@ header h2 {
   max-width: 600px; 
   line-height: 25px;
   text-indent: 45px;
+  text-align: justify;
 }
 
 .article {
@@ -288,13 +292,46 @@ footer p {
 
 @media screen and (max-width: 770px) {
   .containerHead {
-    height: 80vh;
+    height: 70vh;
+  }
+
+  .logo {
+    font-size: 3em;
+  }
+
+  header h2 {
+    font-size: 2.4em;
+  }
+
+  .mockImg {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 667px){
+  .logo {
+    font-size: 2.8em;
+  }
+
+  header h2 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 568px){
+  .logo {
+    font-size: 2.5em;
+  }
+
+  header h2 {
+    font-size: 2em;
   }
 }
 
 @media screen and (max-width: 430px) {
   .containerHead {
-    background: url("./img/sf-small.jpeg") no-repeat center center;
+    background: url("./img/bg-small.jpeg") no-repeat center center;
     height: 44vh;
   }
 
@@ -353,6 +390,23 @@ footer p {
   }
 }
 
+@media screen and (max-height: 411px) {
+  .containerHead {
+    height: 78vh;
+  }
+
+  .mockImg {
+    max-width: 70%;
+    height: auto;
+  }
+}
+
+@media screen and (max-height: 375px) {
+  .containerHead {
+    height: 78vh;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .logo, 
   header h2 {
@@ -370,6 +424,18 @@ footer p {
 
   .aboutMe-box2 p {
     font-size: .9em;
+  }
+
+  #projects h2,
+  h3 {
+    font-size: 2em;
+  }
+
+  .js-title-1,
+  .js-title-2,
+  .js-title-3 {
+    font-size: 2em;
+    margin-bottom: 20px;
   }
 
   .arrow-1,
@@ -414,20 +480,23 @@ footer p {
 
 }
 
-
 @media screen and (max-width: 320px) {
   .containerHead {
-  background: url("./img/sf-small.jpeg") no-repeat center center;
-  height: 43vh;
+  background: url("./img/bg-small.jpeg") no-repeat center center;
+  height: 50vh;
   }
 
-  .logo, 
-  header h2 {
-    font-size: 2.5em;
+  .logo {
+    font-size: 1.8em;
+    padding-top: 35px;
   }
 
   header h2 {
-    font-size: 1.9em;
+    font-size: 1.4em;
+  }
+
+  .aboutMe-box1 img {
+    margin: 20px auto;
   }
 
   .mockImg {
