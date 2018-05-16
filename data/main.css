@@ -147,7 +147,7 @@ header h2 {
 }
 
 .projects-title {
-  background: linear-gradient(to bottom right, #d2b28f, #ee946e);
+  background-color: #dcd5e2;
   height: 150px; 
   display: flex;
   justify-content: center;
