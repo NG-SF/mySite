@@ -16,20 +16,14 @@
 
 <body id="top">
 	<header>
-  <div class="containerHead">
-  <h1 class="logo js-logo">Nataliya Gapochka</h1>
+    <h1 class="logo js-logo">Nataliya Gapochka</h1>
     <h2 class="js-logo">Full Stack JavaScript Developer</h2>
-  </div>
+    <img class="image" src="./data/img/ng.jpg" alt="profile">
   </header>
-  <nav role="navigation">
-    <a href="https://github.com/NG-SF" target="_blank" rel="noopener">GitHub</a>
-    <a href="#projects">Projects </a>
-    <a href="#contact">Contact</a>
-  </nav>
+
 <main role="main">
 <section class="aboutMe" role="doc-introduction">
-  <div class="aboutMe-box1"><img src="./data/img/ng.jpg" alt="profile"></div>
-  <div class="aboutMe-box2">
+  <div class="aboutMe-box1">
     <h2>About Me</h2>
     <p>I am a recent graduate of <a href="https://www.thinkful.com/bootcamp/web-development/flexible/" target="_blank" rel="noopener">Thinkful</a> Full Stack Flexible Mentorship Program.</p>
     <p>I moved to San Francisco 4 years ago from Austin, TX.  My educational background is in economics and accounting, but because of the strong presence and influence of the tech industry in the Bay Area I decided to try coding and loved it.</p>
@@ -37,25 +31,34 @@
     <p>I like coding because it is challenging, focuses on problem-solving, and encourages flexibility. I enjoy learning and treat every problem as a chance to improve my knowledge. </p>
     <p>In my free time I enjoy cooking, watching movies, hiking and travel.</p>
   </div>
+
+  <div id="contact">
+  <h2>Contact:</h2>
+  <div class="contact-icons">
+    <a href="https://www.linkedin.com/in/nataliya-gapochka/" target="_blank" rel="noopener"><img class="icon" src="./data/icons/linkedIn.jpg" alt="icon"></a>
+    <a href="https://github.com/NG-SF" target="_blank" rel="noopener"><img class="icon" src="./data/icons/git.png" alt="icon"></a>      
+    <a href="mailto:natasha.gapochka@gmail.com"><img class="icon" src="./data/icons/email.png" alt="icon"></a>      
+  </div>
+</div>
 </section>
 
 <section id="projects">
   <div class="projects-title">
-    <h2>Projects</h2>
+    <h2 class="title">Projects </h2>
+    <div class="pointer bounce"></div> 
   </div>
-      <div class="project-3box box">
+      <section class="project-1">
       <h3 class="js-title-3">Cost Curious</h3> 
-      <div class="img-box">
-        <img class="mockImg" src="./data/screens/costCurious1.jpeg" alt="screenshot">
-        <button class="arrow-2">&or;</button>
-        <img class="mockImg img-toggle-2" src="./data/screens/costCurious2.jpeg" alt="screenshot">
-      </div>
-        <p>After reading an <a class="article" href="http://www.businessinsider.com/heres-how-much-money-you-could-save-by-making-coffee-at-home-2015-10" target="_blank" rel="noopener">article</a> "Here's how much money you could save by making coffee at home", I got curious to find out how much do I spend on coffee each month. So I decided to create a responsive full-stack app that helps users discover their spending habits.</p>
-      <div class="demo-links">
-          <a class="js-link" href="https://cost-curious.netlify.com/" target="_blank" rel="noopener">Live Demo</a>
-          <a class="js-link" href="https://github.com/NG-SF/cost-curious-client" target="_blank" rel="noopener">Code&amp;Details</a>
-      </div>
-        <h3 class="tech">Technology Used</h3>
+
+      <div class="flexBox">
+        <div>
+          <p>A responsive full-stack app that helps users discover their spending habits.</p>
+          <p>Inspired by an <a class="article" href="http://www.businessinsider.com/heres-how-much-money-you-could-save-by-making-coffee-at-home-2015-10" target="_blank" rel="noopener">article "Here's how much money you could save by making coffee at home"</a> </p>
+          <div class="demo-links">
+              <a class="js-link" href="https://cost-curious.netlify.com/" target="_blank" rel="noopener">Live</a>
+              <a class="js-link" href="https://github.com/NG-SF/cost-curious-client" target="_blank" rel="noopener">Code</a>
+          </div>
+          <h3 class="tech">Technology Used</h3>
         <div class="project-icons">
           <img class="icon" src="./data/icons/html.png" alt="icon">
           <img class="icon" src="./data/icons/css.png" alt="icon">
@@ -72,77 +75,74 @@
           <img class="icon" src="./data/icons/jest-enzyme.jpeg" alt="icon">
           <img class="icon" src="./data/icons/mocha-chai.png" alt="icon">
         </div>
+        </div>
+          <div class="img-box">
+            <img class="mockImg" src="./data/screens/costCurious1.jpeg" alt="screenshot">
+          </div>
       </div>
+   
+      </section>
 
-      <div class="project-2box box">
+      <section class="project-2">
       <h3 class="js-title-2">PickMeUp</h3> 
-      <div class="img-box">
-        <img class="mockImg" src="./data/screens/pickMeUp1.jpeg" alt="screenshot">
-        <button class="arrow-1">&or;</button>
-        <img class="mockImg img-toggle-1" src="./data/screens/pickMeUp2.jpeg" alt="screenshot">
-      </div>
-        <p>Studying can be very stressful, so in order to de-stess I decided to create this responsive full-stack app that stores the collection of my favorite jokes.</p>
-        <div class="demo-links">
-          <a href="https://pickme-up.herokuapp.com/" target="_blank" rel="noopener">Live Demo</a>
-          <a href="https://github.com/NG-SF/pickMeUp" target="_blank" rel="noopener">Code&amp;Details</a>
-        </div>
-        <h3 class="tech">Technology Used</h3>
-        <div class="project-icons">
-          <img class="icon" src="./data/icons/html.png" alt="icon">
-          <img class="icon" src="./data/icons/css.png" alt="icon">
-          <img class="icon" src="./data/icons/javascript.png" alt="icon">
-          <img class="icon" src="./data/icons/node.png" alt="icon">
-          <img class="icon" src="./data/icons/mongodb.png" alt="icon">
-          <img class="icon" src="./data/icons/ejs.gif" alt="icon">
-          <img class="icon" src="./data/icons/semantic.png" alt="icon">
-          <img class="icon" src="./data/icons/ajax.png" alt="icon">
-          <img class="icon" src="./data/icons/heroku.png" alt="icon">
-          <img class="icon" src="./data/icons/travis.png" alt="icon">
-          <img class="icon" src="./data/icons/mocha-chai.png" alt="icon">
-        </div>
-      </div>
 
-      <div class="project-1box box">
+      <div class="flexBox">
+        <div>
+          <p>Studying can be very stressful, so in order to de-stess I decided to create this responsive full-stack app that stores the collection of my favorite jokes.</p>
+          <div class="demo-links">
+            <a href="https://pickme-up.herokuapp.com/" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/NG-SF/pickMeUp" target="_blank" rel="noopener">Code</a>
+          </div>
+          <h3 class="tech">Technology Used</h3>
+          <div class="project-icons">
+            <img class="icon" src="./data/icons/html.png" alt="icon">
+            <img class="icon" src="./data/icons/css.png" alt="icon">
+            <img class="icon" src="./data/icons/javascript.png" alt="icon">
+            <img class="icon" src="./data/icons/node.png" alt="icon">
+            <img class="icon" src="./data/icons/mongodb.png" alt="icon">
+            <img class="icon" src="./data/icons/ejs.gif" alt="icon">
+            <img class="icon" src="./data/icons/semantic.png" alt="icon">
+            <img class="icon" src="./data/icons/ajax.png" alt="icon">
+            <img class="icon" src="./data/icons/heroku.png" alt="icon">
+            <img class="icon" src="./data/icons/travis.png" alt="icon">
+            <img class="icon" src="./data/icons/mocha-chai.png" alt="icon">
+          </div>
+          </div>
+          <div class="img-box">
+          <img class="mockImg" src="./data/screens/pickMeUp1.jpeg" alt="screenshot">
+        </div>
+      </div>
+      </section>
+
+      <section class="project-3">
       <h3 class="js-title-1">MovieNight App</h3> 
-      <div class="img-box">
-        <img class="mockImg" src="./data/screens/movieNight.jpeg" alt="screenshot">
-      </div>
-        <p>I love movies, especially Sci-Fi, so I designed this app to make the process of choosing what movie to watch easier. It uses API data from YouTube and Movie DB to give users more information about movies.
-        </p>
-        <div class="demo-links">
-          <a href="https://ng-sf.github.io/movieApp/" target="_blank" rel="noopener">Live Demo</a>
-          <a href="https://github.com/NG-SF/movieApp" target="_blank" rel="noopener">Code&amp;Details</a>
+      <div class="flexBox">
+        <div>
+          <p>I love movies, especially Sci-Fi, so I designed this app to make the process of choosing what movie to watch easier. It uses API data from YouTube and Movie DB to give users more information about movies.
+          </p>
+          <div class="demo-links">
+            <a href="https://ng-sf.github.io/movieApp/" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/NG-SF/movieApp" target="_blank" rel="noopener">Code</a>
+          </div>
+          <h3 class="tech">Technology Used</h3>
+          <div class="project-icons">
+            <img class="icon" src="./data/icons/html.png" alt="icon">
+            <img class="icon" src="./data/icons/css.png" alt="icon">
+            <img class="icon" src="./data/icons/javascript.png" alt="icon">
+            <img class="icon" src="./data/icons/jquery-icon.png" alt="icon">
+            <img class="icon" src="./data/icons/ajax.png" alt="icon">
+          </div>
         </div>
-        <h3 class="tech">Technology Used</h3>
-        <div class="project-icons">
-          <img class="icon" src="./data/icons/html.png" alt="icon">
-          <img class="icon" src="./data/icons/css.png" alt="icon">
-          <img class="icon" src="./data/icons/javascript.png" alt="icon">
-          <img class="icon" src="./data/icons/jquery-icon.png" alt="icon">
-          <img class="icon" src="./data/icons/ajax.png" alt="icon">
+
+          <div class="img-box">
+          <img class="mockImg" src="./data/screens/movieNight.jpeg" alt="screenshot">
         </div>
-      </div>
+    </div>
+    </section>
 </section>
 
-
-<div id="contact">
-  <h2 class="header" >Contact:</h2>
-  <div>
-    <p>For general inquiry, <a href="mailto:natasha.gapochka@gmail.com">email me</a></p>
-    <p>Find more details about my projects or my code at <a href="https://github.com/NG-SF" target="_blank" rel="noopener">GitHub</a></p>
-     <p>Connect with me on <a href="https://www.linkedin.com/in/nataliya-gapochka/" target="_blank" rel="noopener">LinkedIn</a></p>
-  </div>
-  <div class="contact-icons">
-    <a href="https://www.linkedin.com/in/nataliya-gapochka/" target="_blank" rel="noopener"><img class="icon" src="./data/icons/linkedIn.jpg" alt="icon"></a>
-    <a href="https://github.com/NG-SF" target="_blank" rel="noopener"><img class="icon" src="./data/icons/git.png" alt="icon"></a>      
-    <a href="mailto:natasha.gapochka@gmail.com"><img class="icon" src="./data/icons/email.png" alt="icon"></a>      
-  </div>
-</div>
-
 </main>
-<footer>
-  <p> © 2018  Nataliya Gapochka</p>
-</footer>
+
 </body>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
