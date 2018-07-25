@@ -9,12 +9,10 @@ body {
 }
 
 header {
-  /* background-color: rgb(244, 237, 234); */
   padding: 20px;
 }
 
 .logo, 
-header h2,
 h2 {
   letter-spacing: 5px;
   text-align: center;
@@ -29,6 +27,7 @@ h2 {
 header h2 {
   padding-top: 15px;
   font-size: 2em;
+  color: rgb(78, 44, 116);
 }
 
 .image {
@@ -50,6 +49,10 @@ header h2 {
   line-height: 20px;
 }
 
+.aboutMe-box1 {
+  margin-bottom: 30px;
+}
+
 .aboutMe h2 {
   text-align: center;
   margin-bottom: 15px;
@@ -58,6 +61,7 @@ header h2 {
 
 .aboutMe p {
   text-indent: 25px;
+  line-height: 30px;
   text-align: justify;
 }
 
@@ -73,7 +77,7 @@ header h2 {
 
 #contact h2 {
   font-size: 1.3em;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .contact-icons {
@@ -91,7 +95,6 @@ header h2 {
 }
 
 /* Projects section */
-
 #projects {
   background-color:rgb(247, 219, 209);
   padding: 5px 0 25px 0;
@@ -172,6 +175,10 @@ header h2 {
   }
 }
 
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+}
 
 .js-title-1,
 .js-title-2,
@@ -183,8 +190,12 @@ header h2 {
   color: #c43805;
 }
 
+.js-title-2 {
+  color: rgb(116, 44, 116);
+}
+
 .js-title-3 {
-  color: #824c2d;
+  color: #6c3c21;
 }
 
 .img-box {
@@ -209,7 +220,6 @@ header h2 {
   margin: 35px;
 }
 
-
 .flexBox {
   display: flex;
   justify-content: space-between;
@@ -221,17 +231,18 @@ header h2 {
 .project-2,
 .project-3 {
   background-color: snow;
+  box-shadow: 7px 7px 5px rgb(179, 179, 179);
   margin: 40px auto;
   padding: 15px;
   max-width: 1100px;
 }
 
 #projects p {
-  padding: 10px 5px;
+  padding: 5px;
   margin: 0 auto;
   max-width: 400px; 
-  line-height: 25px;
-  text-indent: 45px;
+  line-height: 20px;
+  text-indent: 30px;
   text-align: justify;
 }
 
@@ -240,17 +251,17 @@ header h2 {
 }
 
 .demo-links {
-  max-width: 400px;
-  margin: 20px auto;
+  max-width: 300px;
+  margin: 15px auto;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .demo-links a {
   background-color:rgb(247, 219, 209);
   margin: 1em 2em;
   border-radius: 5px;
+  box-shadow: 2px 3px rgb(169, 167, 167);
   padding: 0.25em .3em;
 }
 
@@ -269,7 +280,7 @@ header h2 {
 
 .tech {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-family: 'Domine', serif;
   margin-bottom: 20px;
 }
@@ -278,7 +289,7 @@ header h2 {
   display: flex;
   width: 450px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding: 0;
   justify-content: space-around;
   align-items: baseline;
@@ -293,31 +304,19 @@ header h2 {
 
 
 @media screen and (max-width: 770px) {
-  .containerHead {
-    height: 70vh;
-  }
-
-  .logo {
-    font-size: 3em;
-  }
-
+  .logo,
   header h2 {
-    font-size: 2.4em;
+    letter-spacing: 3px;
   }
 
   .mockImg {
     max-width: 80%;
     height: auto;
   }
-}
 
-@media screen and (max-width: 667px){
-  .logo {
-    font-size: 2.8em;
-  }
-
-  header h2 {
-    font-size: 2em;
+  .img-box {
+    order: -1;
+    margin: 10px auto;
   }
 }
 
@@ -327,29 +326,14 @@ header h2 {
   }
 
   header h2 {
-    font-size: 2em;
+    font-size: 1.9em;
   }
 }
 
 @media screen and (max-width: 430px) {
-  .containerHead {
-    background: url("./img/bg-small.jpeg") no-repeat center center;
-    height: 44vh;
-  }
-
-  nav {
-    flex-direction: column;
-    height: 230px;
-    font-size: .8em;
-  }
-
-  .logo, 
+  .logo,
   header h2 {
-    font-size: 2.5em;
-  }
-
-  header h2 {
-    font-size: 2em;
+    letter-spacing: 2px;
   }
 
   .aboutMe {
@@ -378,13 +362,9 @@ header h2 {
     margin: 0 auto;
   }
 
-  .contact p {
-    line-height: 40px;
-  }
-
   .contact-icons {
-    width: 220px;
-    margin: 30px auto;
+    max-width: 220px;
+    margin: 0 auto;
   }
 
   .contact-icons .icon {
@@ -393,30 +373,20 @@ header h2 {
 }
 
 @media screen and (max-height: 411px) {
-  .containerHead {
-    height: 78vh;
-  }
-
   .mockImg {
     max-width: 70%;
     height: auto;
   }
-}
 
-@media screen and (max-height: 375px) {
-  .containerHead {
-    height: 78vh;
-  }
 }
 
 @media screen and (max-width: 375px) {
-  .logo, 
-  header h2 {
-    font-size: 2.1em;
+  .logo {
+    font-size: 2em;
   }
 
   header h2 {
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
 
   .aboutMe {
@@ -424,13 +394,21 @@ header h2 {
     margin: 0;
   }
 
-  .aboutMe-box2 p {
+  .aboutMe-box1 p {
     font-size: .9em;
   }
 
   #projects h2,
   h3 {
     font-size: 2em;
+  }
+
+  #projects p {
+    font-size: .8em;
+  }
+
+  .demo-links a {
+    font-size: 1.5em;
   }
 
   .js-title-1,
@@ -440,19 +418,10 @@ header h2 {
     margin-bottom: 20px;
   }
 
-  .arrow-1,
-  .arrow-2 {
-    font-size: 2.7em;
-  }
-
   .mockImg {
     width: 300px;
     display: block;
     margin: 0 auto;
-  }
-
-  .box {
-    padding: 15px;
   }
 
   .tech {
@@ -461,31 +430,18 @@ header h2 {
 
   #contact {
     padding: 25px;
-    height: 400px;
-  }
-
-  #contact p {
-    font-size: 1em;
-    line-height: 25px;
   }
 
   .header {
     font-size: 1.9em;
     margin: 40px 0;
   }
-
-  footer p {
-    size: 280px;
-    font-size: .8em;
-    text-align: center;
-  }
-
 }
 
 @media screen and (max-width: 320px) {
-  .containerHead {
-  background: url("./img/bg-small.jpeg") no-repeat center center;
-  height: 50vh;
+  .logo,
+  header h2 {
+    letter-spacing: 1px;
   }
 
   .logo {
@@ -504,11 +460,6 @@ header h2 {
   .mockImg {
     width: 280px;
     margin: 0 auto;
-  }
-
-  .arrow-1,
-  .arrow-2 {
-    font-size: 2em;
   }
 
   #projects p {
