@@ -14,7 +14,7 @@ header {
 
 .logo, 
 h2 {
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   text-align: center;
   color: rgb(116, 44, 116);
 }
@@ -306,7 +306,7 @@ header h2 {
 @media screen and (max-width: 770px) {
   .logo,
   header h2 {
-    letter-spacing: 3px;
+    letter-spacing: 1px;
   }
 
   .mockImg {
@@ -322,18 +322,18 @@ header h2 {
 
 @media screen and (max-width: 568px){
   .logo {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   header h2 {
-    font-size: 1.9em;
+    font-size: 1.5em;
   }
 }
 
 @media screen and (max-width: 430px) {
   .logo,
   header h2 {
-    letter-spacing: 2px;
+    letter-spacing: 1.8px;
   }
 
   .aboutMe {
@@ -381,14 +381,6 @@ header h2 {
 }
 
 @media screen and (max-width: 375px) {
-  .logo {
-    font-size: 2em;
-  }
-
-  header h2 {
-    font-size: 1.7em;
-  }
-
   .aboutMe {
     padding: 20px;
     margin: 0;
@@ -445,12 +437,12 @@ header h2 {
   }
 
   .logo {
-    font-size: 1.8em;
+    font-size: 1.7em;
     padding-top: 35px;
   }
 
   header h2 {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 
   .aboutMe-box1 img {
